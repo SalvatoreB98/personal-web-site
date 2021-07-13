@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 a {
@@ -34,6 +35,11 @@ a:hover {
   transform: rotate(90deg);
 }
 
+.my-wrap {
+  max-width: 900px;
+  margin: auto;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -58,12 +64,15 @@ section {
 }
 
 .introduction {
+  padding-top: 55px;
+  padding-bottom: 55px;
   position: relative;
 }
 .introduction p {
   font-size: 21px;
 }
-.introduction .background-img {
+
+.background-img {
   z-index: 0;
   opacity: 35%;
   position: absolute;
@@ -77,12 +86,27 @@ section {
      object-fit: cover;
 }
 
+.skills-section, .hero {
+  position: relative;
+}
+.skills-section .background-img, .hero .background-img {
+  opacity: 10%;
+  filter: blur(2px);
+}
+
 section:nth-of-type(2n+0) {
   background: var(--secondary-color);
   color: white;
 }
 
+.skills-gif.img-fluid {
+  position: relative;
+  z-index: 3;
+  max-width: 500px;
+}
+
 header nav {
+  min-height: 60px;
   background-color: var(--secondary-color);
   padding: 5px 21px;
 }
@@ -95,11 +119,27 @@ header nav a {
 header nav a:hover {
   color: white;
 }
+header nav .menu {
+  padding: 13px;
+  color: white;
+  font-size: 21px;
+}
 
 .before {
   opacity: 0%;
   transform: scale(0.5);
-  transition: all 1s ease-in-out;
+  transition: all 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.introduction .before {
+  opacity: 0%;
+  transform: translateX(-250px);
+  transition: all 0.75s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.introduction .active {
+  opacity: 1;
+  transform: scale(1);
+  transform: translateX(0px);
 }
 
 .active {

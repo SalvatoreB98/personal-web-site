@@ -1,9 +1,22 @@
-$animationSpeed : 1s;
+$animationSpeed : 0.75s;
 .before{ 
     opacity: 0%;
     transform: scale(0.5);
-    transition: all $animationSpeed ease-in-out;
+    transition: all $animationSpeed cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+.introduction{
+    .before{ 
+        opacity: 0%;
+        transform: translateX(-250px);
+        transition: all $animationSpeed cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .active{
+        opacity: 1;
+        transform: scale(1);
+        transform: translateX(0px);
+    }
+}
+
 .active{
     opacity: 1;
     transform: scale(1);

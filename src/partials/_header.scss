@@ -1,5 +1,6 @@
 header{
     nav{
+        min-height: 60px;
         background-color: var(--secondary-color);
         padding: $spacing-1 $spacing-4;
         a{
@@ -10,6 +11,11 @@ header{
             &:hover{
                 color: white;
             }
+        }
+        .menu{
+            padding: $spacing-3;
+            color: white;
+            font-size: $spacing-4;
         }
     }
 }
