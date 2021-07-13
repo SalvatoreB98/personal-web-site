@@ -1,0 +1,15 @@
+header{
+    nav{
+        background-color: var(--secondary-color);
+        padding: $spacing-1 $spacing-4;
+        a{
+            font-weight: 500;
+            text-transform: uppercase;
+            color: white;
+            padding: $spacing-3 $spacing-4;
+            &:hover{
+                color: white;
+            }
+        }
+    }
+}

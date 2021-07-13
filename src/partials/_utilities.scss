@@ -1,0 +1,14 @@
+.my-button{
+    padding: $spacing-1 $spacing-3;
+    align-self: center;
+    border-radius: $spacing-2;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+.primary-color{
+    color: var(--primary-color);
+}
+.rotate-90{
+    display: inline-block;
+    transform: rotate(90deg);
+}
