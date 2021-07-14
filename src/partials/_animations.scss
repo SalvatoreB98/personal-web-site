@@ -29,3 +29,15 @@ $animationSpeed : 0.75s;
 .scroll{
     transform: translateY(10px);
 }
+.proj-container .specs{
+   transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.proj-container:hover .specs{
+    opacity: 100%;
+}
+.proj-container img{
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.proj-container:hover img{
+    transform: scale(1.5);
+}

@@ -14,6 +14,10 @@ section{
     overflow: hidden;
 }
 .hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 90vh;
     .fa{
         font-size: $spacing-medium;
     }
@@ -44,6 +48,12 @@ section{
         opacity: 10%;
         filter: blur(2px);
     }
+    .skills-img{
+        width: calc(100% / 6);
+    }
+    .languages{
+        font-size: $spacing-3;
+    }
 }
 section:nth-of-type(2n+0) {
     background: var(--secondary-color);
@@ -54,4 +64,33 @@ section:nth-of-type(2n+0) {
     position: relative;
     z-index: 3;
     max-width: 500px;
+}
+.proj-container{
+    cursor: pointer;
+    position: relative;
+    width: calc(33% - 50px);
+    margin: $spacing-medium;
+    border-radius: $spacing-medium;
+    overflow: hidden;
+    a{
+        color: white;
+    }
+    .specs{
+        opacity: 0;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        hr{
+            align-self: center;
+            width: 75%;
+            border-top: 2px solid white;
+        }
+        background-color: #000000a1;
+        z-index: 2;
+        top: 0;
+        position: absolute;
+    }
 }
