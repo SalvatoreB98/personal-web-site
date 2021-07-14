@@ -41,3 +41,7 @@ $animationSpeed : 0.75s;
 .proj-container:hover img{
     transform: scale(1.5);
 }
+.go-up:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}

@@ -45,6 +45,10 @@ a:hover {
   margin: auto;
 }
 
+.mini-font-size {
+  font-size: 8px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -119,7 +123,6 @@ section:nth-of-type(2n+0) {
 .skills-gif.img-fluid {
   position: relative;
   z-index: 3;
-  max-width: 500px;
 }
 
 .proj-container {
@@ -150,6 +153,23 @@ section:nth-of-type(2n+0) {
   align-self: center;
   width: 75%;
   border-top: 2px solid white;
+}
+
+.go-up {
+  filter: drop-shadow(0px 0px 5px #000000ab);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 13px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  position: fixed;
+  top: 100px;
+  right: 8px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
 }
 
 header nav {
@@ -218,6 +238,11 @@ header nav .menu {
 
 .proj-container:hover img {
   transform: scale(1.5);
+}
+
+.go-up:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 @media screen and (max-width: 900px) {
