@@ -41,7 +41,27 @@ $animationSpeed : 0.75s;
 .proj-container:hover img{
     transform: scale(1.5);
 }
+.go-up{
+    transition: opacity 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 .go-up:hover{
     background-color: var(--primary-color);
     color: var(--secondary-color);
+}
+nav{
+    .my-nav-link{
+        transition: color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+}
+nav{
+    .my-nav-link:hover{
+        color: var(--primary-color);
+    }
+}
+.my-button{
+    transition: background-color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.my-button:hover{
+    background-color: #020202;
+    color: white;
 }

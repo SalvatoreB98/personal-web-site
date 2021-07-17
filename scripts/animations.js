@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
         }
         if(content){
             let contentPosition = content.getBoundingClientRect().top;
-            let screenPosition = window.innerHeight / 1.5;
+            let screenPosition = window.innerHeight / 1.3;
             if (contentPosition < screenPosition) {
                 content.classList.add('active');
                 if (i < contents.length - 1) {

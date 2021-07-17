@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imgs/meYellowThumbnail.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,146 +13,182 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito" rel="stylesheet">
     <link rel="stylesheet" href="dist/app.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="scripts/script.js"></script>
     <script src="scripts/animations.js"></script>
     <title> Salvatore Butera Website </title>
 </head>
 
 <body>
-    <header>
-        <nav class=" d-flex justify-content-end">
-            <a class="d-none d-sm-inline-block" href="#about-me">Su di me</a>
-            <a class="d-none d-sm-inline-block" href="#skills">Skills</a>
-            <a class="d-none d-sm-inline-block" href="#progetti"> Progetti </a>
-            <a class="my-button d-none d-sm-inline-block" href=""> Contattami </a>
-            <div class="menu d-none d-block d-sm-none"><i class="fa fa-bars" aria-hidden="true"></i></div>
-        </nav>
-    </header>
-    <section class="hero">
-        <img class="background-img" src="imgs/dots-bg.png" alt="">
-        <div class="d-flex justify-content-center">
-            <div class="m-4">
-                <h1>Ciao!<br>Sono <span class="primary-color">Salvatore</span>,<br> Jr Full Stack Web developer</h1>
-            </div>
-            <div class=" align-self-center">
-                <div class="profile-img m-4">
-                    <img src="imgs/meYellow.png" class=" img-fluid" alt="">
+    <div id="root">
+
+
+        <header>
+            <nav class=" d-flex justify-content-end">
+                <a class="d-none d-sm-inline-block my-nav-link" href="files/salvatore-butera-cv.pdf">CV <i class="fa fa-download" aria-hidden="true"></i></a>
+                <a class="d-none d-sm-inline-block my-nav-link" href="#about-me">Su di me</a>
+                <a class="d-none d-sm-inline-block my-nav-link" href="#skills">Skills</a>
+                <a class="d-none d-sm-inline-block my-nav-link" href="#progetti"> Progetti </a>
+                <a class="my-button d-none d-sm-inline-block" href="#contact-me"> Contattami </a>
+                <div class="menu d-none d-block d-sm-none"><i class="fa fa-bars" aria-hidden="true"></i></div>
+            </nav>
+        </header>
+        <section class="hero">
+            <img class="background-img" src="imgs/dots-bg.png" alt="">
+            <div class="d-flex justify-content-center">
+                <div class="m-4">
+                    <h1>Ciao!<br>Sono <span class="primary-color">Salvatore</span>,<br> Jr Full Stack Web developer</h1>
+                </div>
+                <div class=" align-self-center">
+                    <div class="profile-img m-4">
+                        <img src="imgs/meYellow.png" class=" img-fluid" alt="">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="text-center m-4">
-            <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
-            <a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-        </div>
-        <div class="text-center">
-            <span class="call-to-scroll no-scroll" id="call-to-scroll"> Scrolla per leggere altro su di me <span
-                    class="rotate-90"> &#10141;</span> </span>
-        </div>
-    </section>
-
-
-    <section class="introduction" id="about-me">
-        <div class="my-wrap before">
-            <h3 class="primary-color"> Chi sono? </h3>
-            <p>
-                Sono un Jr Full Stack Web Developer appassionato di informatica con una buona conoscenza dello sviluppo
-                di software web e con conoscenze di base in grafica e design. So utilizzare framework come Laravel e VUE
-                JS per la realizzazione di siti web sia lato front-end che lato back-end. Sono sempre pronto a sfidare
-                me stesso e imparare ogni giorno nuove cose.
-            </p>
-        </div>
-    </section>
-
-
-    <section class="skills-section" id="skills">
-
-        <h3 class="text-center primary-color">
-            Skills
-        </h3>
-        <div class="d-flex justify-content-center before">
-            <img src="imgs/laptop-skills.gif" class="img-fluid skills-gif" alt="">
-        </div>
-        <div class="d-flex justify-content-center my-wrap flex-wrap img-container">
-            <div class="skills-img before"><img class="img-fluid" src="imgs/skills/html.png" alt=""> </div>
-            <div class="skills-img before"><img class="img-fluid" src="imgs/skills/css3.png" alt=""> </div>
-            <div class="skills-img before"><img class="img-fluid" src="imgs/skills/js.png" alt=""> </div>
-            <div class="skills-img before"><img class="img-fluid" src="imgs/skills/vue.png" alt=""> </div>
-            <div class="skills-img before"><img class="img-fluid" src="imgs/skills/php.png" alt=""> </div>
-            <div class="skills-img before"><img class="img-fluid" src="imgs/skills/laravel.png" alt=""> </div>
-        </div>
-        <div class="languages text-center mt-5">
-            HTML5, CSS3, JS, VUE JS, PHP, LARAVEL
-        </div>
-    </section>
-
-
-    <section class="experience" id="progetti">
-        <div class="">
-            <div class="my-wrap">
-                <h3 class="text-center primary-color mb-5">
-                    Works
-                </h3>
+            <div class="text-center m-4">
+                <div></div>
+                <a class="m-2" href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a class="m-2" href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                <a class="m-2" href="/files/salvatore-butera-cv.pdf" download> <i class="fa fa-download" aria-hidden="true"> </i></a>
             </div>
-            <div class="d-flex flex-wrap my-wrap-2">
-                <div class="proj-container">
-                    <img class="img-fluid" src="imgs/proj/boolflix.png" alt="">
-
-                    <a href="https://salvatoreb98.github.io/vue-boolflix/" target="_blank" class="specs">
-                        <h5> Boolflix </h5>
-                        <hr>
-                        <div> VUE JS, AJAX </div>
-                    </a>
-                </div>
-                <div class="proj-container">
-
-                    <img class="img-fluid" src="imgs/proj/avada.png" alt="">
-                    <a href="https://salvatoreb98.github.io/proj-html-vuejs/" target="_blank" class="specs">
-                        <h5> Avada Movers </h5>
-                        <hr>
-                        <div> HTML, CSS, VUE JS </div>
-                    </a>
-                </div>
-                <div class="proj-container">
-                    <img class="img-fluid" src="imgs/proj/boolzap.png" alt="">
-                    <a href="https://salvatoreb98.github.io/vue-boolzapp/" target="_blank" class="specs">
-                        <h5> Boolzap </h5>
-                        <hr>
-                        <div> VUE JS </div>
-                    </a>
-                </div>
-                <div class="proj-container">
-                    <img class="img-fluid" src="imgs/proj/laravel.png" alt="">
-                    <a href="https://salvatoreb98.github.io/laravel-boolpress/" target="_blank" class="specs">
-                        <h5> Boolpress </h5>
-                        <hr>
-                        <div> LARAVEL, PHP, BOOTSTRAP</div>
-                    </a>
-                </div>
-                <div class="proj-container">
-                    <img class="img-fluid" src="imgs/proj/album.png" alt="">
-                    <a href="https://salvatoreb98.github.io/vue-dischi/" target="_blank" class="specs">
-                        <h5> Albums </h5>
-                        <hr>
-                        <div> AJAX, VUE JS, JAVASCRIPT</div>
-                    </a>
-                </div>
-                <div class="proj-container">
-                    <img class="img-fluid" src="imgs/proj/spotify.png" alt="">
-                    <a href="https://salvatoreb98.github.io/html-css-spotifyweb/" target="_blank" class="specs">
-                        <h5> Spotify </h5>
-                        <hr>
-                        <div> FLEXBOX, HTML, CSS</div>
-                    </a>
-                </div>
+            <div class="text-center">
+                <span class="call-to-scroll no-scroll" id="call-to-scroll"> Scrolla per leggere altro su di me <span
+                        class="rotate-90"> &#10141;</span> </span>
             </div>
+        </section>
 
-    </section>
+
+        <section class="introduction" id="about-me">
+            <div class="my-wrap before">
+                <h3 class="primary-color"> Chi sono? </h3>
+                <p>
+                    Sono un Jr Full Stack Web Developer appassionato di informatica con una buona conoscenza dello
+                    sviluppo
+                    di software web e con conoscenze di base in grafica e design. So utilizzare framework come Laravel e
+                    VUE
+                    JS per la realizzazione di siti web sia lato front-end che lato back-end. Sono sempre pronto a
+                    sfidare
+                    me stesso e imparare ogni giorno nuove cose.
+                </p>
+            </div>
+        </section>
 
 
-    <footer>
-        © Copyright Salvatore Butera. All Rights Reserved
-    </footer>
+        <section class="skills-section" id="skills">
 
-    <a href="#" class="go-up"> <i class="fa fa-chevron-up" aria-hidden="true"></i> <span class="mini-font-size"> Torna su </span> </a>
+            <h3 class="text-center primary-color">
+                Skills
+            </h3>
+            <div class="skills-gif-container d-flex justify-content-center before m-auto">
+                <img src="imgs/laptop-skills.gif" class="img-fluid skills-gif" alt="">
+            </div>
+            <div class="d-flex justify-content-center my-wrap flex-wrap img-container">
+                <div class="skills-img before"><img class="img-fluid" src="imgs/skills/html.png" alt=""> </div>
+                <div class="skills-img before"><img class="img-fluid" src="imgs/skills/css3.png" alt=""> </div>
+                <div class="skills-img before"><img class="img-fluid" src="imgs/skills/js.png" alt=""> </div>
+                <div class="skills-img before"><img class="img-fluid" src="imgs/skills/vue.png" alt=""> </div>
+                <div class="skills-img before"><img class="img-fluid" src="imgs/skills/php.png" alt=""> </div>
+                <div class="skills-img before"><img class="img-fluid" src="imgs/skills/laravel.png" alt=""> </div>
+            </div>
+            <div class="languages text-center mt-5">
+                HTML5, CSS3, JS, VUE JS, PHP, LARAVEL
+            </div>
+        </section>
+
+        <section class="experience" id="progetti">
+            <div class="">
+                <div class="my-wrap">
+                    <h3 class="text-center primary-color mb-5">
+                        Works
+                    </h3>
+                </div>
+                <div class="d-flex flex-wrap my-wrap-2">
+                    <div class="proj-container before">
+                        <img class="img-fluid" src="imgs/proj/boolflix.png" alt="">
+
+                        <a href="https://salvatoreb98.github.io/vue-boolflix/" target="_blank" class="specs">
+                            <h5> Boolflix </h5>
+                            <hr>
+                            <div> VUE JS, AJAX </div>
+                        </a>
+                    </div>
+                    <div class="proj-container before">
+
+                        <img class="img-fluid" src="imgs/proj/avada.png" alt="">
+                        <a href="https://salvatoreb98.github.io/proj-html-vuejs/" target="_blank" class="specs">
+                            <h5> Avada Movers </h5>
+                            <hr>
+                            <div> HTML, CSS, VUE JS </div>
+                        </a>
+                    </div>
+                    <div class="proj-container before">
+                        <img class="img-fluid" src="imgs/proj/boolzap.png" alt="">
+                        <a href="https://salvatoreb98.github.io/vue-boolzapp/" target="_blank" class="specs">
+                            <h5> Boolzap </h5>
+                            <hr>
+                            <div> VUE JS </div>
+                        </a>
+                    </div>
+                    <div class="proj-container before">
+                        <img class="img-fluid" src="imgs/proj/laravel.png" alt="">
+                        <a href="https://salvatoreb98.github.io/laravel-boolpress/" target="_blank" class="specs">
+                            <h5> Boolpress </h5>
+                            <hr>
+                            <div> LARAVEL, PHP, BOOTSTRAP</div>
+                        </a>
+                    </div>
+                    <div class="proj-container before">
+                        <img class="img-fluid" src="imgs/proj/album.png" alt="">
+                        <a href="https://salvatoreb98.github.io/vue-dischi/" target="_blank" class="specs">
+                            <h5> Albums </h5>
+                            <hr>
+                            <div> AJAX, VUE JS, JAVASCRIPT</div>
+                        </a>
+                    </div>
+                    <div class="proj-container before">
+                        <img class="img-fluid" src="imgs/proj/spotify.png" alt="">
+                        <a href="https://salvatoreb98.github.io/html-css-spotifyweb/" target="_blank" class="specs">
+                            <h5> Spotify </h5>
+                            <hr>
+                            <div> FLEXBOX, HTML, CSS</div>
+                        </a>
+                    </div>
+                </div>
+
+        </section>
+
+        <section class="contact-me" id="contact-me">
+            <h3 class="text-center primary-color mb-5">
+                Contattami
+            </h3>
+            <div class="container">
+                <form id="contact" @submit.prevent="sendEmail(e)">
+                    <label class=" d-block  form-group"> La tua email<input class="form-control" type="text" v-model="sender"> </label>
+                    <label class=" d-block  form-group"> Oggetto <input class="form-control" type="text" v-model="subject"> </label>
+    
+                    <label class="d-block  form-group" for="message">
+                        Testo: <br>
+                        <textarea class="w-100" v-model="message" id="message" style="min-height: 200px;"></textarea>
+                    </label> <br>
+                    <button class="my-button" type="submit">INVIA</button>
+    
+    
+    
+    
+                </form>
+            </div>
+        </section>
+
+        <footer class="p-3 p-lg-5">
+            © Copyright Salvatore Butera. All Rights Reserved
+        </footer>
+
+        <a href="#" class="go-up"> <i class="fa fa-chevron-up" aria-hidden="true"></i>
+            <span class="mini-font-size">
+                Torna sù
+            </span>
+        </a>
+    </div>
 </body>
 
 </html>
