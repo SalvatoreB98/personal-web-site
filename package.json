@@ -1,48 +1,27 @@
 {
   "name": "personal-web-site",
   "version": "1.0.0",
-  "private": true,
-  "description": "",
-  "author": "",
+  "description": "``` This is my personal web site ```",
+  "main": ".eslintrc.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "main": "index.js",
-  "dependencies": {
-    "core-js": "^3.6.5",
-    "emailjs-com": "^3.2.0",
-    "laravel-mix": "^6.0.25",
-    "vue": "^2.6.11"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SalvatoreB98/personal-web-site.git"
   },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "@vue/eslint-config-standard": "^5.1.2",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "eslint-plugin-vue": "^6.2.2",
-    "resolve-url-loader": "^4.0.0",
-    "sass": "^1.35.2",
-    "sass-loader": "^12.1.0",
-    "vue-template-compiler": "^2.6.11"
-  },
-  "_id": "personal-web-site@1.0.0",
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/SalvatoreB98/personal-web-site/issues"
   },
   "homepage": "https://github.com/SalvatoreB98/personal-web-site#readme",
-  "license": "ISC",
-  "readme": "ERROR: No README data found!",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SalvatoreB98/personal-web-site.git"
+  "dependencies": {
+    "laravel-mix": "^6.0.25"
+  },
+  "devDependencies": {
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.35.2",
+    "sass-loader": "^12.1.0"
   }
 }
