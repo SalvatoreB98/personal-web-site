@@ -30,4 +30,17 @@ window.addEventListener("load", () => {
             myElement.classList.remove("scroll");
         }, 1000);
     }, 500);
+
+
+
+    //GO UP / TORNA SU BUTTON
+    let goUp = document.querySelector(".go-up");
+    window.addEventListener("scroll",()=>{
+        if(window.scrollY>250){
+            goUp.style.opacity = "100%";
+        }
+        else{
+            goUp.style.opacity = "0%";
+        }
+    })
 })

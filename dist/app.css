@@ -1,3 +1,8 @@
+:root {
+  --primary-color: #E6BC00;
+  --secondary-color: #2e2e2e;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -32,9 +37,25 @@ button {
   -webkit-appearance: none;
 }
 
-:root {
-  --primary-color: #E6BC00;
-  --secondary-color: #2e2e2e;
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background-color: var(--secondary-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c7a900;
 }
 
 .my-button {
@@ -190,7 +211,6 @@ section:nth-of-type(2n+0) {
   width: 50px;
   height: 50px;
   cursor: pointer;
-  mix-blend-mode: screen;
 }
 
 .skills-gif-container {
@@ -308,6 +328,18 @@ nav .my-nav-link:hover {
 
   .proj-container {
     width: 100%;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .go-up {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    font-size: 1.5rem;
+  }
+
+  .mini-font-size {
+    font-size: 10px;
   }
 }
 footer {

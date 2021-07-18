@@ -1,13 +1,7 @@
-window.addEventListener("load", () => {
-    let goUp = document.querySelector(".go-up");
-    window.addEventListener("scroll",()=>{
-        if(window.scrollY>250){
-            goUp.style.opacity = "100%";
-        }
-        else{
-            goUp.style.opacity = "0%";
-        }
 
-    })
-
-});
+function sendEmail() {
+    let subject= document.getElementById("subject").value;
+    let message = document.getElementById("message").value;
+    window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=salvatore.butera1998@gmail.com&su=${subject}&body=${message}`);
+    document.getElementById("contact").reset();
+}
